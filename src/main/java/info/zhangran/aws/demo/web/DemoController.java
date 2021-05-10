@@ -34,8 +34,8 @@ public class DemoController {
     log.info("Parameter Store DyamoDB Access Key {}", dynamodbAccessKey);
     log.info("Parameter Store Device Token {}", deviceToken);
     log.info("Secret Manager test1's value {}", secretManagerTest1);
-    log.info("Secret Manager test1's value {}", secretManagerTest2);
-    log.info("Secret Manager test1's value {}", secretManagerTest3);
+    log.info("Secret Manager test2's value {}", secretManagerTest2);
+    log.info("Secret Manager test3's value {}", secretManagerTest3);
     return ResponseEntity.ok("hello");
   }
 
