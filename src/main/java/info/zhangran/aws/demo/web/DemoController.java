@@ -20,7 +20,7 @@ public class DemoController {
   private String deviceToken;
 
 
-  @Value("${username}")
+  @Value("${username}")  //secret m
   private String username;
 
 
@@ -28,7 +28,7 @@ public class DemoController {
   public ResponseEntity<String> getParam() {
     log.info("Parameter Store DyamoDB Access Key {}", dynamodbAccessKey);
     log.info("Parameter Store Device Token {}", deviceToken);
-    log.info("Secret Manager test1's value {}", username);
+    log.info("Secret Manager username's value {}", username);
 
     return ResponseEntity.ok("hello");
   }
