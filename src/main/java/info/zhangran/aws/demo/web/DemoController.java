@@ -20,22 +20,16 @@ public class DemoController {
   private String deviceToken;
 
 
-  @Value("${test1}")
-  private String secretManagerTest1;
+  @Value("${username}")
+  private String username;
 
-  @Value("${test2}")
-  private String secretManagerTest2;
-
-  @Value("${test3}")
-  private String secretManagerTest3;
 
   @GetMapping("/parameter")
   public ResponseEntity<String> getParam() {
     log.info("Parameter Store DyamoDB Access Key {}", dynamodbAccessKey);
     log.info("Parameter Store Device Token {}", deviceToken);
-    log.info("Secret Manager test1's value {}", secretManagerTest1);
-    log.info("Secret Manager test2's value {}", secretManagerTest2);
-    log.info("Secret Manager test3's value {}", secretManagerTest3);
+    log.info("Secret Manager test1's value {}", username);
+
     return ResponseEntity.ok("hello");
   }
 
